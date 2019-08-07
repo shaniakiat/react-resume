@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>Resume | Shania Kiat</title>
+    <meta charset="UTF-8" />
+    <!--[if IE]><![endif]-->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Shania Kiat</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="content"></div>
+    <script src="https://fb.me/react-0.14.6.js"></script>
+    <script src="https://fb.me/react-dom-0.14.6.js"></script>
+    <script src="https://unpkg.com/react@0.12.1/dist/JSXTransformer.js"></script>
+    <script type="text/jsx">
+
+      var DATA = {
+        name: "Hey, I'm Shania",
+        subtext: "Developer & designer based in Boston, MA",
+      }
+
+      var App = React.createClass({
+        render: function() {
+          return(
+            <div className="app">
+
+              <Center
+                intro={this.props.profileData.intro}
+                resumeURL={this.props.profileData.resumeURL}
+              />
+            </div>
+          );
+        }
+      });
+
+
+
+      var Center = React.createClass({
+        render: function() {
+          return(
+            <div className="center">
+              <div className="center-inner">
+                <div className="center-inner-inner">
+                  <div className="introduction">
+                    <h4>Intro</h4>
+                      <div className="content">
+                        <p className="intro-p">I&#39;m an undergraduate at La Salle University, Philadelphia,
+                  majoring in mathematics and computer science.</p>
+
+                        <span className="intro-p job-pls">I&#39;m currently looking for my second and final summer internship (from May to August
+                          2020) before I graduate in 2021!</span>
+                    </div>
+                  </div>
+
+                </div>
+                <a className="resume" href={this.props.resumeURL} target="_blank"><div className="resume-link">Grab a PDF of my full resume</div></a>
+              </div>
+            </div>
+          );
+        }
+      });
+
+      ReactDOM.render(
+        <App profileData={DATA}/>,
+        document.getElementById('content')
+      );
+    </script>
+  </body>
+</html>
