@@ -10,73 +10,7 @@
     />
 
     <title>Shania Kiat</title>
-    <!-- <link
-      rel="shortcut icon"
-      href="http://brittanychiang.com/img/logo-black.png"
-      hreflang="en-us"
-    /> -->
 
-    <!-- <meta property="og:title" content="Resume | Brittany Chiang" />
-    <meta
-      property="og:description"
-      content="Design-minded, detail oriented web developer passionate about combining beautiful code with beautiful design."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.brittanychiang.com/resume" />
-    <meta property="og:site_name" content="Resume | Brittany Chiang" />
-    <meta property="og:image" content="http://brittanychiang.com/img/og.png" />
-    <meta property="og:image:width" content="1280" />
-    <meta property="og:image:height" content="672" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:locale" content="en_US" />
-
-    <meta
-      name="description"
-      content="Design-minded, detail oriented web developer passionate about combining beautiful code with beautiful design."
-    />
-    <meta
-      name="keywords"
-      content="design, development, web, bchiang7, brittany, chiang, javascript, northeastern"
-    />
-    <meta
-      name="google-site-verification"
-      content="DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk"
-    />
-
-    <meta itemprop="name" content="Resume | Brittany Chiang" />
-    <meta
-      itemprop="description"
-      content="Design-minded, detail oriented web developer passionate about combining beautiful code with beautiful design."
-    />
-    <meta itemprop="image" content="http://brittanychiang.com/img/og.png" />
-
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:url" content="http://brittanychiang.com/resume" />
-    <meta name="twitter:site" content="@bchiang7" />
-    <meta name="twitter:creator" content="@bchiang7" />
-    <meta name="twitter:title" content="Resume | Brittany Chiang" />
-    <meta
-      name="twitter:description"
-      content="Design-minded, detail oriented web developer passionate about combining beautiful code with beautiful design."
-    />
-    <meta
-      name="twitter:image:src"
-      content="http://brittanychiang.com/img/og.png"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Catamaran:200,300,400,500,600,700"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head> -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -89,7 +23,7 @@
 
       var DATA = {
         name: "Hey, I'm Shania",
-        subtext: "Developer & designer based in Boston, MA",
+        subtext: "",
       }
 
       var App = React.createClass({
@@ -97,6 +31,7 @@
           return(
             <div className="app">
               <Center
+
                 intro={this.props.profileData.intro}
                 resumeURL={this.props.profileData.resumeURL}
               />
@@ -116,6 +51,7 @@
                   <div className="introduction">
                     <h4>Intro</h4>
                       <div className="content">
+                        <p className="intro-p">Hi, I'm Shania</p>
                         <p className="intro-p">I&#39;m an undergraduate at La Salle University, Philadelphia,
                   majoring in mathematics and computer science.</p>
 
@@ -123,7 +59,113 @@
                           2020) before I graduate in 2021!</span>
                     </div>
                   </div>
+                  <div className="education">
+                    <h4>Education</h4>
+                    <div className="content">
+                      <div className="university"><a href="https://www.lasalle.edu/" target="_blank">La Salle University</a></div>
+                      <div className="college"><a href="https://www.lasalle.edu/computer-science/" target="_blank">School of Arts and Sciences  /  Computer Science</a></div>
+                      <div className="major"><strong>Majors:</strong> Mathematics & Computer Science </div>
+                      <div className="degree"><strong>Degree:</strong> Bachelor of Science</div>
+                      <div className="grad-date">Expected Graduation: May 2021</div>
+                    </div>
+                  </div>
+                  <div className="courses">
+                    <h4>Relevant Coursework</h4>
+                      <div className="content">
+                        <ul className="description">
+                          <li>Data Communication Networks</li>
+                          <li>Computer Architecture</li>
+                          <li>Database Management Systems</li>
+                          <li>Object Programming</li>
+                          <li>Introduction to Data Structures and Algorithms</li>
+                          <li>Software Engineering</li>
+                          <li>Theory of Algorithms</li>
+                          <li>Computer Electronics</li>
+                          <li>Multivariable Calculus</li>
+                          <li>Linear Algebra and Applications</li>
+                          <li>Foundations of Mathematics</li>
+                          <li>Probablilty and Statistics I</li>
+                          <li>Complex Variables</li>
+                          <li>General Physics I</li>
+                        </ul>
+                      </div>
+                  </div>
+                  <div className="experience">
+                    <h4>Experience</h4>
+                    <div className="content">
+                      <div className="exp-item">
+                        <div className="job">
+                          <a className="company" href="https://www.tegraanalytics.com/" target="_blank">Tegra Analytics, LLC.</a>
+                          <div className="duration">May 2019 &mdash; Aug 2019</div>
+                        </div>
+                        <div className="title">Predictive Analytics Intern</div>
+                        <ul className="description">
+                          <li>Perform exploratory data analysis to maximize post engagements of the data</li>
+                        </ul>
+                      </div>
+                      <div className="exp-item">
+                        <div className="job">
+                          <a className="company" href="https://www.lasalle.edu/math-computer-science/" target="_blank">La Salle Mathematics and Computer Science Department</a>
+                          <div className="duration">May 2019 &mdash; Aug 2019</div>
+                        </div>
+                        <div className="title">Undergraduate Student Researcher</div>
+                        <ul className="description">
+                          <li>Conduct research with Dr. Timothy Highley to determine the hardness of the tropical exchange
+                                problem where each person can bring multiple items to the trading venue. </li>
+                        </ul>
+                      </div>
+                      <div className="exp-item">
+                        <div className="job">
+                          <a className="company" href="https://www.lasalle.edu/math-computer-science/" target="_blank">La Salle Mathematics and Computer Science Department</a>
+                          <div className="duration">Aug 2018 &mdash; Jun 2019</div>
+                        </div>
+                        <div className="title">Mathematics Tutor</div>
+                        <ul className="description">
+                          <li>Tutor La Salle’s undergraduate students in college algebra, pre-calculus, and calculus I.</li>
+                          <li>Assist students individually or in small groups to enhance their math skills.</li>
+                        </ul>
+                      </div>
+                      <div className="exp-item">
+                        <div className="job">
+                          <a className="company" href="https://www.lasalle.edu/english/" target="_blank">La Salle English Department</a>
+                          <div className="duration">Aug 2017 &mdash; PRESENT</div>
+                        </div>
+                        <div className="title">Student Worker</div>
+                        <ul className="description">
+                          <li>Assist professors of English Department with various tasks.</li>
+                          <li>Organize documents as needed.</li>
+                          <li>Pick up, drop off, and distribute mail and other shipments between offices.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="skills">
+                    <h4>Skills</h4>
+                    <div className="content">
+                      <div className="skill-category">
+                        <strong>Languages: &nbsp;</strong>
+                        <span>Java, JavaScript (ES6), HTML5, CSS3, Python</span>
+                      </div>
+                      <div className="skill-category">
+                        <strong>Libraries &amp; Frameworks: &nbsp;</strong>
+                        <span>Bootstrap, Node, Backbone, React</span>
+                      </div>
+                      <div className="skill-category">
+                        <strong>Tools: &nbsp;</strong>
+                        <span>Git &amp; Github, Command Line, IntelliJ IDEA CE, Visual Studio Code, Android Studio, NetBeans, Eclipse, Adobe Photoshop, Illustrator, inDesign, Jupyter Notebook, IBM CPLEX</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="projects">
+                    <h4>Projects</h4>
+                    <div className="content">
+                      <div className="project-item">
+                        <a className="project-title" href="http://shaniakiat.dev/" target="_blank">shaniakiat.dev</a>
+                        <p className="project-desc">Portfolio site designed and coded from scratch to showcase my skills and past work</p>
+                      </div>
 
+                    </div>
+                  </div>
                 </div>
                 <a className="resume" href="https://shaniakiat.dev/resume.pdf" target="_blank"><div className="resume-link">Grab a PDF of my full resume</div></a>
               </div>

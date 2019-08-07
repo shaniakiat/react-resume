@@ -139,14 +139,14 @@ a {
 }
 
 .center .education .major,
-.center .education .minor,
+.center .education .degree,
 .center .education .conc,
 .center .education .study-abroad {
   font-size: 15px;
 }
 
 .center .education .major > strong,
-.center .education .minor > strong,
+.center .education .degree > strong,
 .center .education .conc > strong,
 .center .education .study-abroad > strong {
   font-weight: 500;
